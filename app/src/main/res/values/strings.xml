@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Healing</string>
+    <string name="title_home">首页</string>
+    <string name="title_exercise">运动</string>
+    <string name="title_discover">发现</string>
+    <string name="title_mine">我的</string>
+    <string name="font_type">微软雅黑</string>
+    <string name="title_choose_image">Open</string>
+    <string name="msg_crop_failed">Crop failed: %s</string>
+</resources>

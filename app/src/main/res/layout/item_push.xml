@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="101dp"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/iv_push_healthy"
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:src="@mipmap/gamersky"/>
+    </android.support.v7.widget.CardView>
+    <TextView
+        android:id="@+id/tv_title_healthy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="怎样养成“易瘦体质”？保持这6个习惯，想胖起来都难"
+        android:textSize="15dp"
+        android:textColor="#000000"
+        android:layout_margin="10dp"
+        android:layout_toRightOf="@+id/cv"
+        />
+    <ImageView
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:src="@drawable/ic_visibility_black_24dp"
+        android:layout_toLeftOf="@+id/tv_browse"
+        android:layout_alignBottom="@+id/tv_browse"
+        />
+    <TextView
+        android:id="@+id/tv_browse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2678"
+        android:layout_margin="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"/>
+
+</RelativeLayout>
+    <!--分隔线-->
+    <View
+        android:layout_height="0.5dp"
+        android:layout_width="match_parent"
+        android:background="#d9d9d9"
+        />
+</LinearLayout>

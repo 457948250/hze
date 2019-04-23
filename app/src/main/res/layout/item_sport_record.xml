@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="60dp">
+<ImageView
+    android:id="@+id/IV_record_sportstyle"
+    android:layout_width="40dp"
+    android:layout_height="40dp"
+    android:src="@drawable/ic_directions_walk_black_24dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_alignParentLeft="true"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/TV_record_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="#000000"
+            android:text="0.55 公里"/>
+        <ImageView
+            android:id="@+id/time"
+            android:src="@drawable/ic_timer_black_24dp"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_alignLeft="@+id/TV_record_distance"
+            android:layout_below="@+id/TV_record_distance"
+            android:layout_marginTop="5dp"/>
+        <TextView
+            android:id="@+id/TV_record_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="00:11:14"
+            android:layout_below="@+id/TV_record_distance"
+            android:layout_marginLeft="35dp"
+            android:layout_alignBottom="@+id/time"/>
+
+        <ImageView
+            android:src="@drawable/ic_settings_input_svideo_black_24dp"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_alignLeft="@+id/TV_record_distance"
+            android:layout_below="@+id/TV_record_distance"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="5dp"/>
+        <TextView
+            android:id="@+id/TV_record_speed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="20'30 /公里"
+            android:layout_below="@+id/TV_record_distance"
+            android:layout_marginLeft="155dp"
+            android:layout_alignBottom="@+id/time"/>
+        <TextView
+            android:id="@+id/TV_record_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="40dp"
+            android:text="3/13"/>
+        <ImageView
+            android:src="@drawable/ic_keyboard_arrow_right_black_24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"/>
+    </RelativeLayout>
+</LinearLayout>
+    <!--分隔线-->
+    <View
+        android:layout_height="0.5dp"
+        android:layout_width="match_parent"
+        android:background="#d9d9d9"
+        />
+</LinearLayout>

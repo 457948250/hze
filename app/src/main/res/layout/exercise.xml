@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Exercise_Layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:id="@+id/TV_position"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.baidu.mapapi.map.MapView
+            android:id="@+id/bmapView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true">
+        </com.baidu.mapapi.map.MapView>
+
+
+        <LinearLayout
+            android:id="@+id/layout_tracing_bottom"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1">
+
+            <Button
+                android:id="@+id/BT_trace"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:layout_marginLeft="55dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/btn_bg_red"
+                android:text="开启服务"
+                android:textColor="#ffffff"/>
+
+            <Button
+                android:id="@+id/BT_gather"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="55dp"
+                android:background="@drawable/btn_bg_red"
+                android:text="开始采集"
+                android:textColor="#ffffff"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

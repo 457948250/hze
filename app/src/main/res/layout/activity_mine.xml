@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+        <RelativeLayout
+            android:background="@mipmap/gamersky_1"
+            android:layout_width="match_parent"
+            android:fitsSystemWindows="true"
+            android:layout_height="match_parent">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/IV_head"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="35dp"
+                android:src="@mipmap/zhitian" />
+            <TextView
+                android:id="@+id/TV_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_toRightOf="@+id/IV_head"
+                android:layout_marginLeft="28dp"
+                android:textSize="25sp"
+                android:textColor="#ffffff"
+                />
+            <ImageView
+                android:id="@+id/iv_setting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_settings_black_24dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <!--&lt;!&ndash;分隔线&ndash;&gt;-->
+    <!--<View-->
+        <!--android:layout_height="5dp"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:background="#d9d9d9"-->
+        <!--/>-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:id="@+id/IV_record"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:src="@mipmap/sport_record" />
+
+            <TextView
+                android:id="@+id/TV_record"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/IV_record"
+                android:text="运动记录"
+                android:textAlignment="center"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_centerInParent="true">
+
+            <ImageView
+                android:id="@+id/IV_weight"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:src="@mipmap/all_record" />
+
+            <TextView
+                android:id="@+id/TV_weight"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/IV_weight"
+                android:text="总成绩单"
+                android:textAlignment="center"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:id="@+id/IV_daily"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:src="@mipmap/day_month_year" />
+
+            <TextView
+                android:id="@+id/TV_daily"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/IV_daily"
+                android:text="日/周报"
+                android:textAlignment="center"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+    <!--分隔线-->
+    <View
+        android:layout_height="0.5dp"
+        android:layout_width="match_parent"
+        android:background="#E6E6E6"
+        />
+   <RelativeLayout
+       android:id="@+id/rl_myinfo"
+       android:layout_width="match_parent"
+       android:layout_height="45dp"
+       android:layout_marginLeft="10dp"
+       android:layout_marginRight="10dp">
+     <ImageView
+         android:id="@+id/IV_myinfo"
+         android:layout_centerVertical="true"
+         android:src="@drawable/ic_person_outline_black_24dp"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content" />
+      <TextView
+          android:id="@+id/TV_myinfo"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="5dp"
+          android:layout_marginTop="10dp"
+          android:layout_centerInParent="true"
+          android:layout_toRightOf="@+id/IV_myinfo"
+          android:text="个人资料"/>
+       <ImageView
+           android:src="@drawable/ic_keyboard_arrow_right_black_24dp"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_centerVertical="true"
+           android:layout_alignParentRight="true"/>
+   </RelativeLayout>
+    <!--分隔线-->
+    <View
+        android:layout_height="0.5dp"
+        android:layout_width="match_parent"
+        android:background="#d9d9d9"
+        />
+    <RelativeLayout
+        android:id="@+id/rl_mydata"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+        <ImageView
+            android:id="@+id/IV_mydata"
+            android:src="@drawable/ic_equalizer_black_24dp"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/TV_mydata"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@+id/IV_mydata"
+            android:text="我的数据"/>
+        <ImageView
+            android:src="@drawable/ic_keyboard_arrow_right_black_24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <!--分隔线-->
+    <View
+        android:layout_height="0.5dp"
+        android:layout_width="match_parent"
+        android:background="#d9d9d9"
+        />
+    <RelativeLayout
+        android:id="@+id/rl_mytarget"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+        <ImageView
+            android:id="@+id/IV_mytarget"
+            android:src="@drawable/ic_target_black_24dp"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/TV_mytarget"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@+id/IV_mytarget"
+            android:text="我的目标"/>
+        <ImageView
+            android:src="@drawable/ic_keyboard_arrow_right_black_24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <!--分隔线-->
+    <View
+        android:layout_height="0.5dp"
+        android:layout_width="match_parent"
+        android:background="#d9d9d9"
+        />
+    <RelativeLayout
+        android:id="@+id/rl_mycollect"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+        <ImageView
+            android:id="@+id/IV_mycollect"
+            android:src="@drawable/ic_favorite_border_black_24dp"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/TV_mycollect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@+id/IV_mycollect"
+            android:text="我的收藏"/>
+        <ImageView
+            android:src="@drawable/ic_keyboard_arrow_right_black_24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <!--分隔线-->
+    <View
+        android:layout_height="0.5dp"
+        android:layout_width="match_parent"
+        android:background="#d9d9d9"
+        />
+</LinearLayout>
